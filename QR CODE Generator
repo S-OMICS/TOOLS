@@ -1,13 +1,14 @@
+##	Install qrcode
 #pip install qrcode[pil]
 
 
 
 import qrcode
 
-# Ask user for the link
+## 	Ask user for the link
 link = input("Enter the link to generate a QR code: ")
 
-# Generate QR code
+# 	Generate QR code
 qr = qrcode.QRCode(
     version=1,  # controls the size of the QR code (1 is the smallest)
     error_correction=qrcode.constants.ERROR_CORRECT_L,  # error correction level
@@ -15,14 +16,14 @@ qr = qrcode.QRCode(
     border=4,  # thickness of the border
 )
 
-# Add the link to the QR code
+# 	Add the link to the QR code
 qr.add_data(link)
 qr.make(fit=True)
 
-# Create an image of the QR code
+# 	Create an image of the QR code
 img = qr.make_image(fill='black', back_color='white')
 
-# Save the QR code as an image file
+# 	Save the QR code as an image file
 img.save("qr_code.png")
 
 print("QR code generated and saved as 'qr_code.png'")
