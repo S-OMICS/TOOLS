@@ -19,9 +19,9 @@ def merge_pdfs(pdf_files, output_file):
 if __name__ == "__main__":
     # List of PDF files to merge
     pdf_files = [
-        "C:/Users/pshri/Desktop/COMMON/Documents/M Tech degree.pdf",
-        "C:/Users/pshri/Desktop/COMMON/Documents/B Tech degree.pdf",
-        "C:/Users/pshri/Desktop/COMMON/Documents/Language Certificate.pdf"
+        "C:/Users/pshri/Desktop/COMMON/Documents/M.pdf",#Path of File 1 
+        "C:/Users/pshri/Desktop/COMMON/Documents/B.pdf",#Path of File 2
+        "C:/Users/pshri/Desktop/COMMON/Documents/L.pdf"#Path of File 3
     ]
     
     # Output file location and name
