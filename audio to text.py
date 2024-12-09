@@ -1,4 +1,4 @@
-
+#winget install "FFmpeg (Essentials Build)"
 from pydub import AudioSegment
 from pydub.utils import which
 
@@ -8,8 +8,8 @@ from pydub import AudioSegment
 import speech_recognition as sr
 
 # Load the audio file
-audio_path = "C:/Users/pshri/Desktop/Coding/output.wav"
-audio = AudioSegment.from_file("C:/Users/pshri/Desktop/Coding/output.wav", format="wav")
+audio_path = "AUDIO_PATH"
+audio = AudioSegment.from_file("AUDIO_PATH", format="AUDIO_FORMAT")
 
 # Convert to WAV format
 wav_path = "converted_audio.wav"
